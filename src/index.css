@@ -33,10 +33,23 @@
     .primaryTransition {
         transition: all ease 150ms;
     }
+    .primaryBoxShadowLight {
+        box-shadow: 2px 2px 2px rgb(194, 192, 192);
+    }
 }
 
 body {
     font-family: "Poppins";
     font-weight: 400;
     font-size: 16px;
+    color: #000000;
+}
+
+.active {
+    background: rgb(248, 172, 6);
+    background: linear-gradient(
+        0deg,
+        rgba(248, 172, 6, 0.4318102240896359) 8%,
+        rgba(209, 191, 228, 0) 93%
+    );
 }

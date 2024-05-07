@@ -1,11 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+    content: ["./index.html", "./src/**/*.{js,jsx}"],
+    darkMode: "class",
+
     theme: {
         container: { center: true },
         screens: {
-            af: "200px",
-            as: "350px",
+            af: "0px",
+            as: "280px",
             sm: "640px",
             md: "768px",
             lg: "1024px",
@@ -13,7 +15,11 @@ export default {
             "2xl": "1536px",
             "3xl": "1600px",
         },
-        extend: {},
+        extend: {
+            colors: {
+                primary_Color_Light: "#211E2F",
+            },
+        },
     },
     plugins: [],
 };
