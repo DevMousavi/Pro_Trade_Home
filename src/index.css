@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Poppins";
+        src: url("./assets/Font_ttf/Poppins-Light.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 200;
+    }
+    @font-face {
+        font-family: "Poppins";
+        src: url("./assets/Font_ttf/Poppins-Regular.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 300;
+    }
+    @font-face {
+        font-family: "Poppins";
+        src: url("./assets/Font_ttf/Poppins-Medium.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 400;
+    }
+    @font-face {
+        font-family: "Poppins";
+        src: url("./assets/Font_ttf/Poppins-Bold.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 800;
+    }
+}
+
+@layer components {
+    .primaryTransition {
+        transition: all ease 150ms;
+    }
+}
+
+body {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 16px;
+}
