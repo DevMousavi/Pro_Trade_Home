@@ -51,13 +51,22 @@ const Header = () => {
                 />
             </div>
             <div className="af:hidden md:flex mb-5 primaryBoxShadowLight w-full h-20 items-center px-3 flex flex-row justify-between dark:text-white dark:bg-primary_Color_Light">
-                <Link to="/">
-                    <img
-                        src="./../src/assets/Logo.png"
-                        alt="LOGO.PNG"
-                        className="w-14"
-                    />
-                </Link>
+                <span className="flex flex-row items-center gap-20">
+                    <span>
+                        <MdOutlineDarkMode
+                            onClick={changeHandler}
+                            className="w-7 h-7 dark:text-yellow-600 dark:hidden"
+                        />
+                        <IoSunnyOutline
+                            onClick={changeHandler}
+                            className="w-7 h-7 hidden dark:flex dark:text-yellow-600"
+                        />
+                    </span>
+                    <span className="flex flex-row items-center gap-2 px-4 py-2 rounded-lg primaryTransition hover:bg-[#FFB74D] hover:border-2 hover:border-[#D84315] hover:text-white ">
+                        <h2>ثبت نام</h2>
+                        <TbLogin className="dark:text-yellow-600" />
+                    </span>
+                </span>
                 <ul className="flex flex-row items-center gap-12 lg:gap-20">
                     <li>
                         <NavLink to="/" className="px-4 py-[29px]">
@@ -76,22 +85,13 @@ const Header = () => {
                         <IoIosArrowDown className="dark:text-yellow-600" />
                     </li>
                 </ul>
-                <span className="flex flex-row items-center gap-20">
-                    <span className="flex flex-row items-center gap-2 px-4 py-2 rounded-lg primaryTransition hover:bg-[#FFB74D] hover:border-2 hover:border-[#D84315] hover:text-white ">
-                        <h2>ثبت نام</h2>
-                        <TbLogin className="dark:text-yellow-600" />
-                    </span>
-                    <span>
-                        <MdOutlineDarkMode
-                            onClick={changeHandler}
-                            className="w-7 h-7 dark:text-yellow-600 dark:hidden"
-                        />
-                        <IoSunnyOutline
-                            onClick={changeHandler}
-                            className="w-7 h-7 hidden dark:flex dark:text-yellow-600"
-                        />
-                    </span>
-                </span>
+                <Link to="/">
+                    <img
+                        src="./../src/assets/Logo.png"
+                        alt="LOGO.PNG"
+                        className="w-14"
+                    />
+                </Link>
             </div>
         </header>
     );
