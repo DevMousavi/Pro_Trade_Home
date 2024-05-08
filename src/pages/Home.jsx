@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../layout/Header";
-import UserComments from "../components/UserComments";
+import Header from "../Layout/Header.jsx";
+import UserComments from "../Components/UserComments.jsx";
 
 const Home = () => {
     return (

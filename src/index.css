@@ -5,7 +5,7 @@
 @layer base {
     @font-face {
         font-family: "Dana";
-        src: url("./assets/font_ttf/Dana-Regular.ttf") format("truetype");
+        src: url("./assets/Font_ttf/Dana-Regular.ttf") format("truetype");
         font-style: normal;
     }
 }
