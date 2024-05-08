@@ -32,8 +32,8 @@ const Header = () => {
 
     return (
         <header className="af:hidden as:flex as:flex-row as:h-20 as:mb-4 w-full sticky top-0 z-50 bg-green-50">
-            <div className="bg-white w-full primaryBoxShadowLight flex items-center justify-between dark:bg-[#141414] px-2 md:hidden">
-                <HiOutlineBars3BottomLeft className="w-7 h-7 dark:text-primary_green_light" />
+            <div className="bg-white w-full primaryBoxShadowLight flex items-center justify-between dark:bg-[#141414] px-4 md:hidden">
+                <HiOutlineBars3BottomLeft className="w-10 h-10 dark:text-primary_green_light cursor-pointer hover:rotate-[900deg] primaryTransition dark:hover:text-orange-400 primaryTransition hover:bg-primary_green_light dark:hover:bg-[#141414] rounded-lg py-0 px-1" />
                 <Link to="/">
                     <img
                         src="./../src/assets/Logo2.png"
@@ -43,23 +43,23 @@ const Header = () => {
                 </Link>
                 <MdOutlineDarkMode
                     onClick={changeHandler}
-                    className="w-7 h-7 dark:text-primary_green_light dark:hidden"
+                    className="w-10 h-10 dark:text-primary_green_light dark:hidden cursor-pointer primaryTransition hover:bg-primary_green_light rounded-lg py-0 px-1"
                 />
                 <IoSunnyOutline
                     onClick={changeHandler}
-                    className="w-7 h-7 hidden dark:flex dark:text-primary_green_light"
+                    className="w-7 h-7 hidden dark:flex dark:text-primary_green_light dark:cursor-pointer dark:hover:text-orange-400 hover:rotate-[900deg] primaryTransition hover:bg-primary_green_light dark:hover:bg-[#141414]"
                 />
             </div>
-            <div className="af:hidden md:flex mb-5 primaryBoxShadowLight w-full h-20 items-center px-3 flex flex-row justify-between dark:text-white dark:bg-[#141414]">
+            <div className="af:hidden md:flex mb-5 primaryBoxShadowLight w-full h-20 items-center px-10 flex flex-row justify-between dark:text-white dark:bg-[#141414]">
                 <span className="flex flex-row items-center gap-20">
                     <span>
                         <MdOutlineDarkMode
                             onClick={changeHandler}
-                            className="w-7 h-7 dark:text-primary_green_light dark:hidden hover:cursor-pointer"
+                            className="w-10 h-10 dark:text-primary_green_light dark:hidden hover:cursor-pointer primaryTransition hover:bg-primary_green_light rounded-lg py-0 px-1"
                         />
                         <IoSunnyOutline
                             onClick={changeHandler}
-                            className="w-7 h-7 hidden dark:flex dark:text-primary_green_light hover:cursor-pointer"
+                            className="w-7 h-7 hidden dark:flex dark:text-primary_green_light hover:cursor-pointer dark:hover:text-orange-400 hover:rotate-[900deg] primaryTransition"
                         />
                     </span>
                     <span className="flex flex-row items-center gap-2 px-4 py-2 rounded-lg primaryTransition hover:bg-green-700 hover:cursor-pointer  hover:text-white ">
