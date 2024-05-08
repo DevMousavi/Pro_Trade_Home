@@ -31,8 +31,8 @@ const Header = () => {
     }, []);
 
     return (
-        <header className="af:hidden as:flex as:flex-row as:h-20 as:mb-4 w-full">
-            <div className="bg-white w-full primaryBoxShadowLight flex items-center justify-between dark:bg-primary_dark px-2 md:hidden">
+        <header className="af:hidden as:flex as:flex-row as:h-20 as:mb-4 w-full sticky top-0 z-50 bg-green-50">
+            <div className="bg-white w-full primaryBoxShadowLight flex items-center justify-between dark:bg-[#141414] px-2 md:hidden">
                 <HiOutlineBars3BottomLeft className="w-7 h-7 dark:text-primary_green_light" />
                 <Link to="/">
                     <img
@@ -50,7 +50,7 @@ const Header = () => {
                     className="w-7 h-7 hidden dark:flex dark:text-primary_green_light"
                 />
             </div>
-            <div className="af:hidden md:flex mb-5 primaryBoxShadowLight w-full h-20 items-center px-3 flex flex-row justify-between dark:text-white dark:bg-primary_dark">
+            <div className="af:hidden md:flex mb-5 primaryBoxShadowLight w-full h-20 items-center px-3 flex flex-row justify-between dark:text-white dark:bg-[#141414]">
                 <span className="flex flex-row items-center gap-20">
                     <span>
                         <MdOutlineDarkMode
@@ -62,8 +62,8 @@ const Header = () => {
                             className="w-7 h-7 hidden dark:flex dark:text-primary_green_light hover:cursor-pointer"
                         />
                     </span>
-                    <span className="flex flex-row items-center gap-2 px-4 py-2 rounded-lg primaryTransition hover:bg-primary_green_light hover:cursor-pointer hover:border-2 hover:border-[#345720] hover:text-white ">
-                        <h2>ثبت نام</h2>
+                    <span className="flex flex-row items-center gap-2 px-4 py-2 rounded-lg primaryTransition hover:bg-green-700 hover:cursor-pointer  hover:text-white ">
+                        <h2 className="font-bold">ثبت نام</h2>
                         <TbLogin className="dark:text-primary_green_light" />
                     </span>
                 </span>

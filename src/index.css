@@ -12,10 +12,19 @@
 
 @layer components {
     .primaryTransition {
-        transition: all ease 150ms;
+        transition: all ease 250ms;
     }
     .primaryBoxShadowLight {
         box-shadow: 2px 2px 2px rgb(194, 192, 192);
+    }
+    .textShadowLight {
+        text-shadow: 2px 2px 20px #245006;
+    }
+    .textShadowDark {
+        text-shadow: 2px 2px 20px #c4c9aa;
+    }
+    .boxShadowLight {
+        box-shadow: #51ad1369 2.4px 2.4px 3.2px, #51ad1369 -2.4px -2.4px 3.2px;
     }
 }
 
@@ -33,3 +42,5 @@ body {
         rgba(209, 191, 228, 0) 93%
     );
 }
+
+/* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
