@@ -1,17 +1,15 @@
-import React, { useEffect } from "react";
-import Header from "../Layout/Header";
-import UserComments from "../Components/UserComments";
+import React from "react";
+import Header from "../layout/Header";
+import UserComments from "../components/UserComments";
 
 const Home = () => {
-    
-
     return (
-      <>
-        <Header />
-        <main>
-          <UserComments />
-        </main>
-      </>
+        <>
+            <Header />
+            <main>
+                <UserComments />
+            </main>
+        </>
     );
 };
 
