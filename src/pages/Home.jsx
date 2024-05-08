@@ -1,7 +1,11 @@
+// React ...
 import React from "react";
-import Header from "../Layout/Header.jsx";
-import UserComments from "../Components/UserComments.jsx";
 import { Link } from "react-router-dom";
+
+// My Components...
+import Header from "../Layout/Header.jsx";
+import Category from "../Components/Category.jsx";
+import UserComments from "../Components/UserComments.jsx";
 
 const Home = () => {
     return (
@@ -45,6 +49,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+                <Category />
                 <UserComments />
                 <br />
                 <br />
