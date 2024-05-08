@@ -17,7 +17,8 @@ export default {
         },
         extend: {
             colors: {
-                primary_Color_Light: "#211E2F",
+                primary_green_light: "#8BC83F",
+                secondary_blue_light: "#1F4C6B",
             },
         },
     },
