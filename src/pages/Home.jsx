@@ -1,7 +1,11 @@
+// React ...
 import React from "react";
-import Header from "../Layout/Header.jsx";
-import UserComments from "../Components/UserComments.jsx";
 import { Link } from "react-router-dom";
+
+// My Components...
+import Header from "../Layout/Header.jsx";
+import Category from "../Components/Category.jsx";
+import UserComments from "../Components/UserComments.jsx";
 
 const Home = () => {
     return (
@@ -15,7 +19,7 @@ const Home = () => {
                     <img
                         src="./../src/assets/ImageHome.png"
                         alt=""
-                        className="as:w-[90%] sm:w-[50%] lg:w-[60%] as:mx-auto md:mx-0 md:ml-8 dark:border-dashed dark:border-2 dark:border-green-600 dark:rounded-3xl"
+                        className="as:w-[90%] sm:w-[50%] lg:w-[60%] as:mx-auto md:mx-0 md:ml-8"
                     />
                     <div>
                         <h2 className="as:text-center sm:hidden lg:block md:text-right sp:text-ellipsis mr-5 as:text-3xl as:mt-7 md:text-5xl lg:text-6xl as:mb-5 md:mb-28 textShadowLight dark:text-white dark:textShadowDark dark:text-nowrap">
@@ -45,6 +49,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+                <Category />
                 <UserComments />
                 <br />
                 <br />
