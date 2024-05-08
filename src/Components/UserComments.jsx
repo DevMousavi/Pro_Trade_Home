@@ -28,13 +28,14 @@ const UserComments = () => {
               کنید که چرا آنها Estatein را برای نیازهای املاک خود انتخاب کردند.
             </p>
             <Link
-              className="hidden md:flex p-3  rounded-xl boxShadowLight dark:boxShadowLight border-primary_green_light dark:text-white dark:bg-gray_10"
+              className="hidden md:flex p-3  rounded-xl boxShadowLight dark:boxShadowLight border-primary_green_light dark:text-white dark:bg-gray_10 hover:bg-green-700 dark:hover:bg-green-700 hover:text-white"
               to={"/"}
             >
               مشاهده بیشتر
             </Link>
           </div>
         </div>
+
         <div className="flex justify-center items-center gap-10">
           <div className="flex flex-col gap-6 w-96 h-96 md:w-[413px] lg:w-[512px] rounded-xl p-9  border-primary_green_light bg-white dark:bg-inherit boxShadowLight dark:boxShadowLight">
             <div className="flex gap-2">
