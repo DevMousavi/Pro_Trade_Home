@@ -3,33 +3,33 @@
 @tailwind utilities;
 
 @layer base {
-    @font-face {
-        font-family: "Dana";
-        src: url("./assets/Font_ttf/Dana-Regular.ttf") format("truetype");
-        font-style: normal;
-    }
+  @font-face {
+    font-family: "IRANSansX";
+    src: url("./assets/Font/IRANSansX-Regular.woff2") format("truetype");
+    font-style: normal;
+  }
 }
 
 @layer components {
-    .primaryTransition {
-        transition: all ease 150ms;
-    }
-    .primaryBoxShadowLight {
-        box-shadow: 2px 2px 2px rgb(194, 192, 192);
-    }
+  .primaryTransition {
+    transition: all ease 150ms;
+  }
+  .primaryBoxShadowLight {
+    box-shadow: 2px 2px 2px rgb(194, 192, 192);
+  }
 }
 
 body {
-    font-family: "Dana";
-    font-size: 16px;
-    color: #000000;
+  font-family: "IRANSansX";
+  font-size: 16px;
+  color: #000000;
 }
 
 .active {
-    background: "#8BC83F";
-    background: linear-gradient(
-        0deg,
-        rgba(139, 200, 63, 0.5) 8%,
-        rgba(209, 191, 228, 0) 93%
-    );
+  background: "#8BC83F";
+  background: linear-gradient(
+    0deg,
+    rgba(139, 200, 63, 0.5) 8%,
+    rgba(209, 191, 228, 0) 93%
+  );
 }
