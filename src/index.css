@@ -4,8 +4,8 @@
 
 @layer base {
     @font-face {
-        font-family: "Dana";
-        src: url("./assets/Font_ttf/Dana-Regular.ttf") format("truetype");
+        font-family: "IRANSansX";
+        src: url("./assets/Font/IRANSansX-Regular.woff2") format("truetype");
         font-style: normal;
     }
 }
@@ -26,10 +26,16 @@
     .boxShadowLight {
         box-shadow: #51ad1369 2.4px 2.4px 3.2px, #51ad1369 -2.4px -2.4px 3.2px;
     }
+    .primaryTransition {
+        transition: all ease 150ms;
+    }
+    .primaryBoxShadowLight {
+        box-shadow: 2px 2px 2px rgb(194, 192, 192);
+    }
 }
 
 body {
-    font-family: "Dana";
+    font-family: "IRANSansX";
     font-size: 16px;
     color: #000000;
 }
