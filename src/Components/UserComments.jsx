@@ -5,8 +5,11 @@ import { Link } from "react-router-dom";
 // Icons...
 import { GoArrowRight } from "react-icons/go";
 import { GoArrowLeft } from "react-icons/go";
+import CartComment from "./CartComment";
+import { data } from "autoprefixer";
 
 const UserComments = () => {
+  const count = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   useEffect(() => {
     const mode = localStorage.getItem("mode");
 
@@ -36,195 +39,24 @@ const UserComments = () => {
           </div>
         </div>
 
-        <div className="flex justify-center items-center gap-10">
-          <div className="flex flex-col gap-6 w-96 h-96 md:w-[413px] lg:w-[512px] rounded-xl p-9  border-primary_green_light bg-white dark:bg-inherit boxShadowLight dark:boxShadowLight">
-            <div className="flex gap-2">
-              <div className="flex justify-center items-center w-11 h-11 rounded-full border-[1px] border-gray_15 bg-gray_10 ">
-                <img
-                  src="./../src/assets/Star.svg"
-                  alt="Star.svg"
-                  className="w-6 h-6"
-                />
-              </div>
-              <div className="flex justify-center items-center w-11 h-11 rounded-full border-[1px] border-gray_15 bg-gray_10 ">
-                <img
-                  src="./../src/assets/Star.svg"
-                  alt="Star.svg"
-                  className="w-6 h-6"
-                />
-              </div>
-              <div className="flex justify-center items-center w-11 h-11 rounded-full border-[1px] border-gray_15 bg-gray_10">
-                <img
-                  src="./../src/assets/Star.svg"
-                  alt="Star.svg"
-                  className="w-6 h-6"
-                />
-              </div>
-              <div className="flex justify-center items-center w-11 h-11 rounded-full border-[1px] border-gray_15 bg-gray_10">
-                <img
-                  src="./../src/assets/Star.svg"
-                  alt="Star.svg"
-                  className="w-6 h-6"
-                />
-              </div>
-              <div className="flex justify-center items-center w-11 h-11 rounded-full border-[1px] border-gray_15 bg-gray_10">
-                <img
-                  src="./../src/assets/Star.svg"
-                  alt="Star.svg"
-                  className="w-6 h-6"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <h3 className="font-medium text-2xl dark:text-white">
-                خدمات استثنایی!
-              </h3>
-              <p className="dark:text-white">
-                تجربه ما با Estatein فوق العاده بود. فداکاری و حرفه ای بودن تیم
-                آنها، یافتن خانه رویایی ما را آسان کرد. بسیار توصیه شده!
-              </p>
-            </div>
-            <div className="flex gap-2">
-              <img src="./../src/assets/Profile1.png" alt="Profile1.svg" />
-              <div className="flex flex-col gap-1">
-                <h3 className="text-xl font-normal dark:text-white">
-                  رضا فریدی
-                </h3>
-                <p className="text-lg font-normal text-gray_60">
-                  مازندران، رشت
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col gap-6 w-96 h-96 md:w-[413px] lg:w-[512px] rounded-xl p-9  border-primary_green_light bg-white dark:bg-inherit boxShadowLight dark:boxShadowLight">
-            <div className="flex gap-2">
-              <div className="flex justify-center items-center w-11 h-11 rounded-full border-[1px] border-gray_15 bg-gray_10 ">
-                <img
-                  src="./../src/assets/Star.svg"
-                  alt="Star.svg"
-                  className="w-6 h-6"
-                />
-              </div>
-              <div className="flex justify-center items-center w-11 h-11 rounded-full border-[1px] border-gray_15 bg-gray_10 ">
-                <img
-                  src="./../src/assets/Star.svg"
-                  alt="Star.svg"
-                  className="w-6 h-6"
-                />
-              </div>
-              <div className="flex justify-center items-center w-11 h-11 rounded-full border-[1px] border-gray_15 bg-gray_10">
-                <img
-                  src="./../src/assets/Star.svg"
-                  alt="Star.svg"
-                  className="w-6 h-6"
-                />
-              </div>
-              <div className="flex justify-center items-center w-11 h-11 rounded-full border-[1px] border-gray_15 bg-gray_10">
-                <img
-                  src="./../src/assets/Star.svg"
-                  alt="Star.svg"
-                  className="w-6 h-6"
-                />
-              </div>
-              <div className="flex justify-center items-center w-11 h-11 rounded-full border-[1px] border-gray_15 bg-gray_10">
-                <img
-                  src="./../src/assets/Star.svg"
-                  alt="Star.svg"
-                  className="w-6 h-6"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <h3 className="font-medium text-2xl dark:text-white">
-                خدمات استثنایی!
-              </h3>
-              <p className="dark:text-white">
-                تجربه ما با Estatein فوق العاده بود. فداکاری و حرفه ای بودن تیم
-                آنها، یافتن خانه رویایی ما را آسان کرد. بسیار توصیه شده!
-              </p>
-            </div>
-            <div className="flex gap-2">
-              <img src="./../src/assets/Profile1.png" alt="Profile1.svg" />
-              <div className="flex flex-col gap-1">
-                <h3 className="text-xl font-normal dark:text-white">
-                  رضا فریدی
-                </h3>
-                <p className="text-lg font-normal text-gray_60">
-                  مازندران، رشت
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col gap-6 w-96 h-96 md:w-[413px] lg:w-[512px] rounded-xl p-9  border-primary_green_light bg-white dark:bg-inherit boxShadowLight dark:boxShadowLight">
-            <div className="flex gap-2">
-              <div className="flex justify-center items-center w-11 h-11 rounded-full border-[1px] border-gray_15 bg-gray_10 ">
-                <img
-                  src="./../src/assets/Star.svg"
-                  alt="Star.svg"
-                  className="w-6 h-6"
-                />
-              </div>
-              <div className="flex justify-center items-center w-11 h-11 rounded-full border-[1px] border-gray_15 bg-gray_10 ">
-                <img
-                  src="./../src/assets/Star.svg"
-                  alt="Star.svg"
-                  className="w-6 h-6"
-                />
-              </div>
-              <div className="flex justify-center items-center w-11 h-11 rounded-full border-[1px] border-gray_15 bg-gray_10">
-                <img
-                  src="./../src/assets/Star.svg"
-                  alt="Star.svg"
-                  className="w-6 h-6"
-                />
-              </div>
-              <div className="flex justify-center items-center w-11 h-11 rounded-full border-[1px] border-gray_15 bg-gray_10">
-                <img
-                  src="./../src/assets/Star.svg"
-                  alt="Star.svg"
-                  className="w-6 h-6"
-                />
-              </div>
-              <div className="flex justify-center items-center w-11 h-11 rounded-full border-[1px] border-gray_15 bg-gray_10">
-                <img
-                  src="./../src/assets/Star.svg"
-                  alt="Star.svg"
-                  className="w-6 h-6"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <h3 className="font-medium text-2xl dark:text-white">
-                خدمات استثنایی!
-              </h3>
-              <p className="dark:text-white">
-                تجربه ما با Estatein فوق العاده بود. فداکاری و حرفه ای بودن تیم
-                آنها، یافتن خانه رویایی ما را آسان کرد. بسیار توصیه شده!
-              </p>
-            </div>
-            <div className="flex gap-2">
-              <img src="./../src/assets/Profile1.png" alt="Profile1.svg" />
-              <div className="flex flex-col gap-1">
-                <h3 className="text-xl font-normal dark:text-white">
-                  رضا فریدی
-                </h3>
-                <p className="text-lg font-normal text-gray_60">
-                  مازندران، رشت
-                </p>
-              </div>
-            </div>
-          </div>
+        <div className="flex as:flex-col sm:flex-row justify-center items-center gap-10">
+          {/* {
+            count.slice(0,3).map((item) => {
+          <CartComment />
+
+            })
+          } */}
+          <CartComment />
+          <CartComment />
+          <CartComment />
         </div>
 
-        <div className="flex justify-between items-center w-full h-20 mt-10 border-t-[1px] border-gray_15">
-          <div className="p-4">
-            <span className="dark:text-white">01 از 10</span>
-          </div>
+        <div className="flex justify-center items-center w-full h-20 mt-10 border-t-[1px] border-gray_15">
           <div className="flex gap-3 w-28">
-            <div className="flex justify-center items-center w-11 h-11 rounded-full boxShadowLight cursor-pointer dark:text-white">
+            <div className="flex justify-center items-center w-11 h-11 rounded-full boxShadowLight cursor-pointer dark:text-white hover:bg-green-700">
               <GoArrowRight />
             </div>
-            <div className="flex justify-center items-center w-11 h-11 rounded-full boxShadowLight cursor-pointer dark:text-white">
+            <div className="flex justify-center items-center w-11 h-11 rounded-full boxShadowLight cursor-pointer dark:text-white hover:bg-green-700">
               <GoArrowLeft />
             </div>
           </div>
