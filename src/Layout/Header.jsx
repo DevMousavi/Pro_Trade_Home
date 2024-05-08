@@ -32,39 +32,39 @@ const Header = () => {
 
   return (
     <header className="af:hidden as:flex as:flex-row as:h-20 as:mb-4 w-full">
-      <div className="bg-white w-full primaryBoxShadowLight flex items-center justify-between dark:bg-primary_Color_Light px-2 md:hidden">
-        <HiOutlineBars3BottomLeft className="w-7 h-7 dark:text-yellow-500" />
+      <div className="bg-white w-full primaryBoxShadowLight flex items-center justify-between dark:bg-primary_dark px-2 md:hidden">
+        <HiOutlineBars3BottomLeft className="w-7 h-7 dark:text-primary_green_light" />
         <Link to="/">
           <img
-            src="./../src/assets/Logo.png"
+            src="./../src/assets/Logo2.png"
             alt="LOGO.PNG"
             className="as:w-12"
           />
         </Link>
         <MdOutlineDarkMode
           onClick={changeHandler}
-          className="w-7 h-7 dark:text-yellow-600 dark:hidden"
+          className="w-7 h-7 dark:text-primary_green_light dark:hidden"
         />
         <IoSunnyOutline
           onClick={changeHandler}
-          className="w-7 h-7 hidden dark:flex dark:text-yellow-600"
+          className="w-7 h-7 hidden dark:flex dark:text-primary_green_light"
         />
       </div>
-      <div className="af:hidden md:flex mb-5 primaryBoxShadowLight w-full h-20 items-center px-3 flex flex-row justify-between dark:text-white dark:bg-primary_Color_Light">
+      <div className="af:hidden md:flex mb-5 primaryBoxShadowLight w-full h-20 items-center px-3 flex flex-row justify-between dark:text-white dark:bg-primary_dark">
         <span className="flex flex-row items-center gap-20">
           <span>
             <MdOutlineDarkMode
               onClick={changeHandler}
-              className="w-7 h-7 dark:text-yellow-600 dark:hidden"
+              className="w-7 h-7 dark:text-primary_green_light dark:hidden"
             />
             <IoSunnyOutline
               onClick={changeHandler}
-              className="w-7 h-7 hidden dark:flex dark:text-yellow-600"
+              className="w-7 h-7 hidden dark:flex dark:text-primary_green_light"
             />
           </span>
           <span className="flex flex-row items-center gap-2 px-4 py-2 rounded-lg primaryTransition hover:bg-[#FFB74D] hover:border-2 hover:border-[#D84315] hover:text-white ">
             <h2>ثبت نام</h2>
-            <TbLogin className="dark:text-yellow-600" />
+            <TbLogin className="dark:text-primary_green_light" />
           </span>
         </span>
         <ul className="flex flex-row items-center gap-12 lg:gap-20">
@@ -82,7 +82,7 @@ const Header = () => {
             <NavLink to="/vvvv" className="px-4 py-[29px]">
               دسته بندی ها
             </NavLink>
-            <IoIosArrowDown className="dark:text-yellow-600" />
+            <IoIosArrowDown className="dark:text-primary_green_light" />
           </li>
         </ul>
         <Link to="/">

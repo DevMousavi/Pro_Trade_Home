@@ -1,13 +1,9 @@
 // React ...
 import React, { useEffect } from "react";
 
-
 // Icons...
 
-
 const UserComments = () => {
-
-
   useEffect(() => {
     const mode = localStorage.getItem("mode");
 
@@ -18,7 +14,7 @@ const UserComments = () => {
 
   return (
     <div className="w-full flex justify-center dark:bg-primary_Color_Light">
-      <div className="w-96 bg-gray-500">
+      <div className="w-96   xl:w-[1596px] lg:w-[1280px]  bg-gray-500">
         <div>
           <h1>آنچه مشتریان ما می گویند</h1>
           <p>
