@@ -1,7 +1,13 @@
 import React from "react";
+import Header from "../Layout/Header.jsx";
 
 const AboutUs = () => {
-    return <div>AboutUs</div>;
+    return (
+        <>
+            <Header />
+            <h1>About Us</h1>
+        </>
+    );
 };
 
 export default AboutUs;

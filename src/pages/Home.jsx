@@ -42,7 +42,7 @@ const Home = () => {
                             </p>
                             <Link
                                 to="/about_us"
-                                className="flex justify-end text-green-900 textShadowLight hover:text-red-800 dark:text-blue-400 dark:textShadowDark primaryTransition dark:hover:text-red-600"
+                                className="flex justify-end text-green-900 textShadowLight  hover:text-red-800 dark:text-blue-400 dark:textShadowDark primaryTransition dark:hover:text-red-600"
                             >
                                 مشاهده بیشتر
                             </Link>
