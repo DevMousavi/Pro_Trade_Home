@@ -7,6 +7,7 @@ import Header from "../Layout/Header.jsx";
 import Category from "../Components/Category.jsx";
 import UserComments from "../Components/UserComments.jsx";
 import FreqAsked from "../Components/FreqAsked.jsx";
+import Explore from "../Components/Explore.jsx";
 
 const Home = () => {
     return (
@@ -33,6 +34,7 @@ const Home = () => {
                 </div>
                 <UserComments />
                 <FreqAsked />
+                <Explore />
                 <br />
                 <br />
                 <br />
