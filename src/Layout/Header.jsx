@@ -51,22 +51,14 @@ const Header = () => {
                 />
             </div>
             <div className="af:hidden md:flex mb-5 primaryBoxShadowLight w-full h-20 items-center px-10 flex flex-row justify-between dark:text-white dark:bg-[#141414]">
-                <span className="flex flex-row items-center gap-20">
-                    <span>
-                        <MdOutlineDarkMode
-                            onClick={changeHandler}
-                            className="w-10 h-10 dark:text-primary_green_light dark:hidden hover:cursor-pointer primaryTransition hover:bg-primary_green_light rounded-lg py-0 px-1"
-                        />
-                        <IoSunnyOutline
-                            onClick={changeHandler}
-                            className="w-7 h-7 hidden dark:flex dark:text-primary_green_light hover:cursor-pointer dark:hover:text-orange-400 hover:rotate-[900deg] primaryTransition"
-                        />
-                    </span>
-                    <span className="flex flex-row items-center gap-2 px-4 py-2 rounded-xl primaryTransition hover:bg-green-700 hover:cursor-pointer  hover:text-white boxShadowLight">
-                        <h2 className="font-bold ">ثبت نام</h2>
-                        <TbLogin className="dark:text-primary_green_light" />
-                    </span>
-                </span>
+                <Link to="/">
+                    <img
+                        src="./../src/assets/Logo2.png"
+                        alt="LOGO.PNG"
+                        className="w-14 hover:scale-125 primaryTransition"
+                    />
+                </Link>
+
                 <ul className="flex flex-row items-center gap-12 lg:gap-20">
                     <li>
                         <NavLink to="/" className="px-4 py-[29px]">
@@ -85,13 +77,22 @@ const Header = () => {
                         <IoIosArrowDown className="dark:text-primary_green_light" />
                     </li>
                 </ul>
-                <Link to="/">
-                    <img
-                        src="./../src/assets/Logo2.png"
-                        alt="LOGO.PNG"
-                        className="w-14 hover:scale-125 primaryTransition"
-                    />
-                </Link>
+                <span className="flex flex-row-reverse items-center gap-20">
+                    <span>
+                        <MdOutlineDarkMode
+                            onClick={changeHandler}
+                            className="w-10 h-10 dark:text-primary_green_light dark:hidden hover:cursor-pointer primaryTransition hover:bg-primary_green_light rounded-lg py-0 px-1"
+                        />
+                        <IoSunnyOutline
+                            onClick={changeHandler}
+                            className="w-7 h-7 hidden dark:flex dark:text-primary_green_light hover:cursor-pointer dark:hover:text-orange-400 hover:rotate-[900deg] primaryTransition"
+                        />
+                    </span>
+                    <span className="flex flex-row items-center gap-2 px-4 py-2 rounded-xl primaryTransition hover:bg-green-700 hover:cursor-pointer  hover:text-white boxShadowLight">
+                        <h2 className="font-bold ">ثبت نام</h2>
+                        <TbLogin className="dark:text-primary_green_light" />
+                    </span>
+                </span>
             </div>
         </header>
     );
