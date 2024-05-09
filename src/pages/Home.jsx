@@ -1,11 +1,11 @@
 // React ...
 import React from "react";
-import { Link } from "react-router-dom";
 
 // My Components...
 import Header from "../Layout/Header.jsx";
 import Category from "../Components/Category.jsx";
 import UserComments from "../Components/UserComments.jsx";
+import SpecialOffer from "../Components/SpecialOffer.jsx";
 
 const Home = () => {
     return (
@@ -43,6 +43,9 @@ const Home = () => {
                             <Category />
                         </div>
                     </div>
+                </div>
+                <div className="container my-12">
+                    <SpecialOffer />
                 </div>
                 <UserComments />
                 <br />
