@@ -12,7 +12,7 @@ const UserComments = () => {
 
     return (
         <div className="w-full flex justify-center  mt-20">
-            <div className="flex flex-col gap-8 p-1 w-[90%] ">
+            <div className="flex flex-col gap-8 p-1 as:w-[90%]">
                 <div className="flex flex-col gap-4">
                     <h1 className="font-semibold text-3xl  dark:text-white textShadowLight dark:textShadowDark ">
                         آنچه مشتریان ما می گویند

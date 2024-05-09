@@ -1,6 +1,6 @@
 const CartComment = () => {
     return (
-        <div className="flex flex-col gap-10 as:w-[98%] h-auto lg:w-[512px] rounded-xl p-10 hover:scale-105 primaryTransition  border-primary_green_light bg-white dark:bg-inherit boxShadowLight dark:boxShadowLight">
+        <div className="flex flex-col gap-10 as:w-[98%] h-auto lg:w-[32%] rounded-xl p-10 hover:scale-105 primaryTransition  border-primary_green_light bg-white dark:bg-inherit boxShadowLight dark:boxShadowLight">
             <div className="flex gap-2">
                 <div className="flex justify-center items-center w-11 h-11 rounded-full border-[1px] border-gray_15 bg-gray_10 ">
                     <img
