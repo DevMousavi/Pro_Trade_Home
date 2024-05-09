@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Header from "../Layout/Header.jsx";
 import Category from "../Components/Category.jsx";
 import UserComments from "../Components/UserComments.jsx";
+import FreqAsked from "../Components/FreqAsked.jsx";
 
 const Home = () => {
     return (
@@ -51,6 +52,7 @@ const Home = () => {
                 </div>
                 <Category />
                 <UserComments />
+                <FreqAsked />
                 <br />
                 <br />
                 <br />
