@@ -9,6 +9,7 @@ import UserComments from "../Components/UserComments.jsx";
 import SpecialOffer from "../Components/SpecialOffer.jsx";
 import FreqAsked from "../Components/FreqAsked.jsx";
 import Explore from "../Components/Explore.jsx";
+import Footer from "../Layout/Footer.jsx";
 
 const Home = () => {
     return (
@@ -61,48 +62,9 @@ const Home = () => {
                 <UserComments />
                 <FreqAsked />
                 <Explore />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
+               
             </main>
+            <Footer />
         </>
     );
 };
