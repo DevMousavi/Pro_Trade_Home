@@ -1,5 +1,6 @@
 // React ...
 import React from "react";
+import { Link } from "react-router-dom";
 
 // My Components...
 import Header from "../Layout/Header.jsx";
@@ -46,6 +47,14 @@ const Home = () => {
                 </div>
                 <div className="container my-12">
                     <SpecialOffer />
+                    <div className="w-full flex items-center justify-center">
+                        <Link
+                            to="/dsgfsfdg"
+                            className="boxShadowLight px-10 py-4 my-8 rounded-md hover:scale-105 primaryTransition bg-white dark:bg-gray_10 dark:text-white"
+                        >
+                            مشاهده بیشتر
+                        </Link>
+                    </div>
                 </div>
                 <UserComments />
                 <br />
