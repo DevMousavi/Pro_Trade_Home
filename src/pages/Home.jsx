@@ -13,7 +13,13 @@ const Home = () => {
             <Header />
             <main className="af:hidden as:flex as:flex-col">
                 <h2 className="af:hidden sm:flex sm:text-5xl lg:hidden justify-center mt-30 textShadowLight dark:text-white dark:textShadowDark dark:text-nowrap">
-                    اینجا ، رویاها به خانه می‌رسند
+                    اینجا ،
+                    <span className="mx-8 text-red-700 font-bold dark:text-green-400">
+                        رویاها
+                    </span>
+                    به
+                    <span className="mx-8 text-blue-700 font-bold">خانه</span>
+                    می‌رسند
                 </h2>
                 <div className="as:flex as:flex-col as:gap-10 md:gap-0 lg:flex-row-reverse items-center justify-center mt-24">
                     <img
@@ -23,7 +29,15 @@ const Home = () => {
                     />
                     <div>
                         <h2 className="as:text-center sm:hidden lg:block  mr-5 as:text-2xl as:mt-7  md:text-4xl  as:mb-5 md:mb-20 textShadowLight dark:text-white dark:textShadowDark dark:text-nowrap">
-                            اینجا ، رویاها به خانه می‌رسند
+                            اینجا ،{" "}
+                            <span className="mx-2 text-red-700 font-bold dark:text-green-400">
+                                رویاها
+                            </span>{" "}
+                            به{" "}
+                            <span className="mx-2 text-blue-700 font-bold">
+                                خانه
+                            </span>{" "}
+                            می رسند
                         </h2>
                         <div className="as:w-auto sm:w-[490px] md:w-[600px] md:mt-8">
                             <Category />
