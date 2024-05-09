@@ -19,7 +19,7 @@ const Explore = () => {
         <div className="w-[90%] sm:w-[25%] lg:w-[15%] flex  justify-center items-center">
           <Link
             to={"/aaa"}
-            className="w-full sm:w-48  h-16 flex justify-center items-center bg-green-700 rounded-xl p-2 text-white as:text-base lg:text-lg  font-medium hover:bg-inherit boxShadowLight hover:boxShadowLight "
+            className="w-full sm:w-48  h-16 flex justify-center items-center bg-green-700 rounded-xl p-2 text-white hover:text-black as:text-base lg:text-lg  font-medium hover:bg-inherit boxShadowLight hover:boxShadowLight "
           >
             کاوش ویژگی ها
           </Link>
