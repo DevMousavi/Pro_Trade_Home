@@ -38,7 +38,7 @@ const CartComment = () => {
                     />
                 </div>
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-4">
                 <h3 className="font-medium text-2xl dark:text-white">
                     خدمات استثنایی!
                 </h3>

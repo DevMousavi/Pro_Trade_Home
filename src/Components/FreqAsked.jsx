@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 // Icons...
 import { GoArrowRight } from "react-icons/go";
 import { GoArrowLeft } from "react-icons/go";
-import CartComment from "./CartComment";
+import CartFreqAsk from "./CartFreqAsk";
 
 const FreqAsked = () => {
   const count = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -34,7 +34,7 @@ const FreqAsked = () => {
 
         <div className="flex as:flex-col lg:flex-row justify-center items-center as:gap-6  md:gap-4 lg:gap-10">
           {count.slice(0, 3).map((item) => (
-            <CartComment />
+            <CartFreqAsk />
           ))}
         </div>
 
